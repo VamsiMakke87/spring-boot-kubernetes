@@ -24,6 +24,6 @@ public class BookmarkerService {
     public BookmarkerDTO getBookmarks(int pageNo){
         Pageable page= PageRequest.of(pageNo, 2, Sort.Direction.DESC, "createdAt");
 
-        return new BookmarkerDTO(bookmarkerRepo.findAll(page));
+        return new BookmarkerDTO(bookmarkerRepo.findBookmarks(page));
     }
 }

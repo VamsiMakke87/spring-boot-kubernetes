@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class BookmarkerDTO {
 
-    private List<Bookmarker> data;
+    private List<BookmarkDTO> data;
 
     private Long totalData;
 
@@ -33,7 +33,7 @@ public class BookmarkerDTO {
 
     private  boolean hasPrevious;
 
-    public  BookmarkerDTO(Page<Bookmarker> page){
+    public  BookmarkerDTO(Page<BookmarkDTO> page){
 
         setData(page.getContent());
         setTotalData(page.getTotalElements());

@@ -1,4 +1,3 @@
-
 CREATE SEQUENCE bm_id_seq START WITH 1 INCREMENT BY 50;
 
 CREATE TABLE bookmarker (
